@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mess Menu</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <input type="radio" name="meal" id="morning" checked />
+    <input type="radio" name="meal" id="noon" />
+    <input type="radio" name="meal" id="snacks" />
+    <input type="radio" name="meal" id="dinner" />
+
+    <main class="card">
+      <div class="icon" aria-hidden="true">
+        <svg viewBox="0 0 88 88" width="88" height="88">
+          <ellipse cx="44" cy="72" rx="22" ry="5" fill="#d9d3ee" />
+          <path d="M24 54c0-14 9-26 20-26s20 12 20 26H24z" fill="#f4a261" />
+          <path d="M28 54h32c0 8-7 14-16 14s-16-6-16-14z" fill="#e76f51" />
+          <rect x="40" y="18" width="8" height="14" rx="3" fill="#2d2d2d" />
+          <text
+            x="44"
+            y="48"
+            text-anchor="middle"
+            font-size="16"
+            font-weight="700"
+            fill="#2d2d2d"
+          >
+            &lt;/&gt;
+          </text>
+        </svg>
+      </div>
+
+      <section class="panel morning">
+        <p class="clock">7:00 AM – 10:00 AM</p>
+        <h1>Morning</h1>
+        <p class="subtitle">Breakfast at the hostel mess</p>
+        <ul class="items">
+          <li>Idli / Poha</li>
+          <li>Bread &amp; jam</li>
+          <li>Tea / coffee</li>
+        </ul>
+      </section>
+
+      <section class="panel noon">
+        <p class="clock">12:00 PM – 3:00 PM</p>
+        <h1>Noon</h1>
+        <p class="subtitle">Lunch at the hostel mess</p>
+        <ul class="items">
+          <li>Rice &amp; dal</li>
+          <li>Sabzi &amp; roti</li>
+          <li>Curd / salad</li>
+        </ul>
+      </section>
+
+      <section class="panel snacks">
+        <p class="clock">4:30 PM – 6:00 PM</p>
+        <h1>Snacks</h1>
+        <p class="subtitle">Evening snacks at the hostel mess</p>
+        <ul class="items">
+          <li>Samosa / bun</li>
+          <li>Biscuits</li>
+          <li>Tea / coffee</li>
+        </ul>
+      </section>
+
+      <section class="panel dinner">
+        <p class="clock">7:30 PM – 10:00 PM</p>
+        <h1>Dinner</h1>
+        <p class="subtitle">Dinner at the hostel mess</p>
+        <ul class="items">
+          <li>Chapati</li>
+          <li>Rice &amp; curry</li>
+          <li>Sweet / fruit</li>
+        </ul>
+      </section>
+
+      <nav class="meals" aria-label="Meal times">
+        <label for="morning">Morning</label>
+        <label for="noon">Noon</label>
+        <label for="snacks">Snacks</label>
+        <label for="dinner">Dinner</label>
+      </nav>
+    </main>
+  </body>
+</html>
